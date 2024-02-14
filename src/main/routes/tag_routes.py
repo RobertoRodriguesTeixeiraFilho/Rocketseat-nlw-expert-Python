@@ -5,6 +5,8 @@ from src.views.tag_creator_view import TagCreatorView
 
 from src.errors.error_handler import handle_errors
 
+from src.validators.tag_creator_validator import tag_creator_validator
+
 # Indicação que se relaciona as tags
 tags_routes_bp = Blueprint('tags_routes', __name__)
 
@@ -15,6 +17,7 @@ def create_tags():
     # Body da requisição http em Flask
     response = None
     try:
+        tag_creator_validator(request)
         tag_creator_view = TagCreatorView()
 
         http_request = HttpRequest(body=request.json)
