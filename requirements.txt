@@ -27,4 +27,4 @@ python-barcode==0.15.1
 PyYAML==6.0.1
 tomlkit==0.12.3
 virtualenv==20.25.0
-Werkzeug==3.0.1
+Werkzeug==3.0.3
