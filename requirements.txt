@@ -26,5 +26,5 @@ pytest==8.0.0
 python-barcode==0.15.1
 PyYAML==6.0.1
 tomlkit==0.12.3
-virtualenv==20.25.0
+virtualenv==20.26.6
 Werkzeug==3.0.3
